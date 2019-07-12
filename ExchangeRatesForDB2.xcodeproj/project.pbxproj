@@ -12,6 +12,15 @@
 		CE232F1522D78D8100077AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE232F1322D78D8100077AE2 /* Main.storyboard */; };
 		CE232F1722D78D8400077AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE232F1622D78D8400077AE2 /* Assets.xcassets */; };
 		CE232F1A22D78D8400077AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE232F1822D78D8400077AE2 /* LaunchScreen.storyboard */; };
+		CE232F2222D79AF300077AE2 /* ERPBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2122D79AF200077AE2 /* ERPBTableViewCell.swift */; };
+		CE232F2422D79B0B00077AE2 /* ERNBUTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2322D79B0B00077AE2 /* ERNBUTableViewCell.swift */; };
+		CE232F2622D7CC8700077AE2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2522D7CC8700077AE2 /* NetworkService.swift */; };
+		CE232F2822D7CCFE00077AE2 /* NetworkServiceExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2722D7CCFE00077AE2 /* NetworkServiceExchangeRates.swift */; };
+		CE232F2A22D7CD9D00077AE2 /* ExchangeRatesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2922D7CD9D00077AE2 /* ExchangeRatesJSON.swift */; };
+		CE232F2C22D8A51400077AE2 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2B22D8A51400077AE2 /* PopVC.swift */; };
+		CE232F2E22D8B8AD00077AE2 /* DateForRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2D22D8B8AD00077AE2 /* DateForRequest.swift */; };
+		CE232F3022D8DE5100077AE2 /* DateFormatterAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232F2F22D8DE5100077AE2 /* DateFormatterAssistant.swift */; };
+		CE25075722D936BC00C1EE9B /* CountCurrencyAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25075622D936BC00C1EE9B /* CountCurrencyAssistant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		CE232F1622D78D8400077AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE232F1922D78D8400077AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE232F1B22D78D8400077AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE232F2122D79AF200077AE2 /* ERPBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERPBTableViewCell.swift; sourceTree = "<group>"; };
+		CE232F2322D79B0B00077AE2 /* ERNBUTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERNBUTableViewCell.swift; sourceTree = "<group>"; };
+		CE232F2522D7CC8700077AE2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE232F2722D7CCFE00077AE2 /* NetworkServiceExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceExchangeRates.swift; sourceTree = "<group>"; };
+		CE232F2922D7CD9D00077AE2 /* ExchangeRatesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesJSON.swift; sourceTree = "<group>"; };
+		CE232F2B22D8A51400077AE2 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
+		CE232F2D22D8B8AD00077AE2 /* DateForRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateForRequest.swift; sourceTree = "<group>"; };
+		CE232F2F22D8DE5100077AE2 /* DateFormatterAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterAssistant.swift; sourceTree = "<group>"; };
+		CE25075622D936BC00C1EE9B /* CountCurrencyAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCurrencyAssistant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +73,62 @@
 			isa = PBXGroup;
 			children = (
 				CE232F0F22D78D8100077AE2 /* AppDelegate.swift */,
-				CE232F1122D78D8100077AE2 /* ViewController.swift */,
+				CE25075422D9355700C1EE9B /* Model */,
+				CE25075322D934F600C1EE9B /* TableViewCells */,
+				CE25075522D9358800C1EE9B /* ViewControllers */,
+				CE25075222D934AC00C1EE9B /* Assistants */,
+				CE25075122D9341800C1EE9B /* NetworkService */,
+				CE232F2D22D8B8AD00077AE2 /* DateForRequest.swift */,
 				CE232F1322D78D8100077AE2 /* Main.storyboard */,
 				CE232F1622D78D8400077AE2 /* Assets.xcassets */,
 				CE232F1822D78D8400077AE2 /* LaunchScreen.storyboard */,
 				CE232F1B22D78D8400077AE2 /* Info.plist */,
 			);
 			path = ExchangeRatesForDB2;
+			sourceTree = "<group>";
+		};
+		CE25075122D9341800C1EE9B /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CE232F2522D7CC8700077AE2 /* NetworkService.swift */,
+				CE232F2722D7CCFE00077AE2 /* NetworkServiceExchangeRates.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CE25075222D934AC00C1EE9B /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				CE232F2F22D8DE5100077AE2 /* DateFormatterAssistant.swift */,
+				CE25075622D936BC00C1EE9B /* CountCurrencyAssistant.swift */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		CE25075322D934F600C1EE9B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE232F2122D79AF200077AE2 /* ERPBTableViewCell.swift */,
+				CE232F2322D79B0B00077AE2 /* ERNBUTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CE25075422D9355700C1EE9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE232F2922D7CD9D00077AE2 /* ExchangeRatesJSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE25075522D9358800C1EE9B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE232F1122D78D8100077AE2 /* ViewController.swift */,
+				CE232F2B22D8A51400077AE2 /* PopVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE232F2622D7CC8700077AE2 /* NetworkService.swift in Sources */,
+				CE232F2822D7CCFE00077AE2 /* NetworkServiceExchangeRates.swift in Sources */,
+				CE232F2222D79AF300077AE2 /* ERPBTableViewCell.swift in Sources */,
 				CE232F1222D78D8100077AE2 /* ViewController.swift in Sources */,
+				CE232F2422D79B0B00077AE2 /* ERNBUTableViewCell.swift in Sources */,
+				CE232F3022D8DE5100077AE2 /* DateFormatterAssistant.swift in Sources */,
 				CE232F1022D78D8100077AE2 /* AppDelegate.swift in Sources */,
+				CE232F2C22D8A51400077AE2 /* PopVC.swift in Sources */,
+				CE232F2E22D8B8AD00077AE2 /* DateForRequest.swift in Sources */,
+				CE25075722D936BC00C1EE9B /* CountCurrencyAssistant.swift in Sources */,
+				CE232F2A22D7CD9D00077AE2 /* ExchangeRatesJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
