@@ -18,14 +18,14 @@ class PopVC: UIViewController {
     settingDatePicker()
   }
   
-  func settingDatePicker() {
+  private func settingDatePicker() {
     datePicker.addTarget(self, action: #selector(followDatePicker(datePicker:)), for: .valueChanged)
     datePicker.datePickerMode = .date
     datePicker.maximumDate = Date()
     datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -4, to: Date())
   }
   
-  @objc func followDatePicker(datePicker: UIDatePicker) {
+  @objc private func followDatePicker(datePicker: UIDatePicker) {
     DateForRequest.shared.date = datePicker.date
   }
 }

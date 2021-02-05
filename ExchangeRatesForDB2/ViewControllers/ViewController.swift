@@ -11,11 +11,11 @@ import Foundation
 
 class ViewController: UIViewController {
   
-  var exchangeRatesJSON: ExchangeRatesJSON!
-  var exchangeRatesForPrivatBank: [ExchangeRate] = []
-  let currencyName = ["Канадский доллар", "Китайский юань", "Чешская крона", "Датская крона", "Венгерский форинт", "Новый израильский шекель", "Японская йена", "Казахстанский тенге", "Молдавский лей", "Норвежская крона", "Сингапурский доллар", "Шведская крона", "Швейцарский франк", "Российский рубль", "Британский фунт", "Американский доллар", "Узбекский сум", "Белорусский рубль", "Туркменский манат", "Азербайджанский манат", "Турецкая лира", "Евро", "Украинская гривна", "Грузинский лари", "Польский злотый"]
-  var indexNBU = 0
-  var indexPB = 0
+  private var exchangeRatesJSON: ExchangeRatesJSON!
+  private var exchangeRatesForPrivatBank: [ExchangeRate] = []
+  private let currencyName = ["Канадский доллар", "Китайский юань", "Чешская крона", "Датская крона", "Венгерский форинт", "Новый израильский шекель", "Японская йена", "Казахстанский тенге", "Молдавский лей", "Норвежская крона", "Сингапурский доллар", "Шведская крона", "Швейцарский франк", "Российский рубль", "Британский фунт", "Американский доллар", "Узбекский сум", "Белорусский рубль", "Туркменский манат", "Азербайджанский манат", "Турецкая лира", "Евро", "Украинская гривна", "Грузинский лари", "Польский злотый"]
+  private var indexNBU = 0
+  private var indexPB = 0
   
   @IBOutlet weak var calendarButtonPB: UIButton!
   @IBOutlet weak var calendarButtonNBU: UIButton!
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     })
   }
 
-  func selectExchangeRatesForPB(array: [ExchangeRate]) -> [ExchangeRate] {
+  private func selectExchangeRatesForPB(array: [ExchangeRate]) -> [ExchangeRate] {
     var exchangeRateArray: [ExchangeRate] = []
     for currency in array {
       if currency.purchaseRate != nil && currency.saleRate != nil {
@@ -64,6 +64,8 @@ class ViewController: UIViewController {
     self.present(popVC, animated: true)
   }
 }
+
+//MARK: - extentions
 
 extension ViewController: UIPopoverPresentationControllerDelegate {
   func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
